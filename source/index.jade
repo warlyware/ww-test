@@ -1,0 +1,25 @@
+doctype html
+html(lang='en', ng-app='thor')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Thor
+    link(rel='stylesheet', href='./packages/foundation/css/foundation.min.css')
+    link(rel='stylesheet', href='/styles.css')
+    link(rel='shortcut icon', href='/favicon.ico')
+  body
+    include views/nav/nav
+    .container
+      .row
+        .small-12.columns
+          div(ui-view)
+
+    script(src='./packages/jquery/dist/jquery.min.js')
+    script(src='./packages/foundation/js/foundation.min.js')
+    script(src='./packages/angular/angular.min.js')
+    script(src='./packages/angular-ui-router/release/angular-ui-router.min.js')
+    script(src='./packages/firebase/firebase.js')
+    script(src='./packages/angularfire/dist/angularfire.min.js')
+    script(src='./packages/lodash/lodash.min.js')
+    script(src='./index.js')

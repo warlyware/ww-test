@@ -1,0 +1,10 @@
+nav.top-bar(ng-controller='NavCtrl')
+  ul.title-area
+    li.name
+      h1(ui-sref='home') &nbsp; Thor
+    li.toggle-topbar.menu-icon: a(href='#'): span Menu
+  section.top-bar-section
+    ul.right
+      li: a(ui-sref='home') Home
+      li: a(ui-sref='user.register') Register
+      li: a(ui-sref='user.login') Login

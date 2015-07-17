@@ -1,0 +1,37 @@
+$logosize: 100px;
+$twtcolor: #55ACEE;
+$googcolor: #D73D32;
+$facecolor: #40559A;
+$gitcolor: #333333;
+
+
+li{
+  img{
+    max-width: $logosize;
+    max-height: $logosize;
+  }
+}
+nav{
+  h1, li{
+    color: white;
+  }
+}
+form{
+  i{
+    font-size: 3em;
+    letter-spacing: .85em;
+  }
+  #twt{
+    color: $twtcolor;
+  }
+  #goog{
+    color: $googcolor;
+  }
+  #face{
+    color: $facecolor;
+  }
+  #git{
+    color: $gitcolor;
+  }
+}
+@import '/packages/foundation-icon-fonts/foundation-icons.css'

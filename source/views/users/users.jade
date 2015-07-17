@@ -1,0 +1,27 @@
+h3.text-center {{name | uppercase}}
+
+form(name='userform' ng-submit='submit(user)')
+  .row.collapse
+    .small-6.columns.small-offset-3
+      .row.collapse
+        .small-5.columns.medium-3
+          span.prefix Email
+        .small-7.columns.medium-9
+          input#email(type='email', name='email', ng-model='user.email')
+  .row.collapse
+    .small-6.columns.small-offset-3
+      .row.collapse
+        .small-5.columns.medium-3
+          span.prefix Password
+        .small-7.columns.medium-9
+          input#password(type='password', name='password', ng-model='user.password')
+  .row.collapse
+    .small-6.columns.small-offset-3
+      .row.collapse
+        .small-12.columns.medium-2
+          button.button.success(type='submit') Email
+        .medium-8.columns.medium-offset-2.small-12
+          i.fi-social-twitter#twt(ng-click='oauth("twitter")')
+          i.fi-social-google-plus#goog(ng-click='oauth("google")')
+          i.fi-social-facebook#face(ng-click='oauth("facebook")')
+          i.fi-social-github#git(ng-click='oauth("github")')
